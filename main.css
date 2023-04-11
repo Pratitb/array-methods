@@ -20,7 +20,8 @@ body{
 }
 .content_head_wrap{
     display: flex;
-    gap: 0 100px;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
 }
 .buttons{
     display: flex;
@@ -32,16 +33,63 @@ body{
     background-color: #90CAF9;
     color: black;
     text-decoration: none;
+    cursor: pointer;
+    border: 3px solid #FFFFFF;
     border-radius: 2px;
     padding: 10px 18px;
     transition: 0.3s;
 }
 .button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+.user{
+    background-color: #80DEEA;
+}
+.user:hover{
+    border: 3px solid #26C6DA;
+}
+.double{
+    background-color: #A5D6A7;
+}
+.double:hover{
+    border: 3px solid #66BB6A;
+}
+.mill{
+    background-color: #FFE082;
+}
+.mill:hover{
+    border: 3px solid #FFCA28;
+}
+.rich{
+    background-color: #F48FB1;
+}
+.rich:hover{
+    border: 3px solid #EC407A;
+}
+.wealth{
+    background-color: #FFAB91;
+}
+.wealth:hover{
+    border: 3px solid #FF7043;
+}
+.head_wealth_wrap{
+    width: 100%;
+    max-width: 300px
 }
 .content_head{
     text-decoration: underline;
     font-size: 20px;
+}
+/* .userNameWealth{
+    max-height: 230px;
+    padding: 0 20px 0 0;
+    overflow-y: scroll;
+} */
+.userNameWealth::-webkit-scrollbar{
+    width: 8px;
+}
+.userNameWealth::-webkit-scrollbar-thumb{
+    background-color: #ddd;
 }
 .person{
     display: flex;
